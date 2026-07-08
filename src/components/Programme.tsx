@@ -39,7 +39,7 @@ export default function Programme() {
               <SlidersHorizontal className="h-3.5 w-3.5" />
               Programme complet
             </span>
-            <h2 className="mt-4 font-display text-3xl font-600 tracking-tight text-ink-900 sm:text-4xl">
+            <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
               Tous les événements
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-ink-500">
@@ -53,7 +53,7 @@ export default function Programme() {
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setActive('Tous')}
-                className={`rounded-full px-4 py-2 text-sm font-600 transition-all ${
+                className={`rounded-full px-4 py-2 text-sm font-semibold transition-all ${
                   active === 'Tous'
                     ? 'bg-ink-900 text-white shadow-md'
                     : 'bg-ink-100 text-ink-600 hover:bg-ink-200'
@@ -65,7 +65,7 @@ export default function Programme() {
                 <button
                   key={cat}
                   onClick={() => setActive(cat)}
-                  className={`rounded-full px-4 py-2 text-sm font-600 transition-all ${
+                  className={`rounded-full px-4 py-2 text-sm font-semibold transition-all ${
                     active === cat
                       ? 'bg-ink-900 text-white shadow-md'
                       : 'bg-ink-100 text-ink-600 hover:bg-ink-200'
@@ -111,25 +111,25 @@ export default function Programme() {
                     </span>
                   </div>
                   <div className="flex flex-1 flex-col p-5">
-                    <div className="flex items-center gap-2 text-xs font-500 text-ink-400">
+                    <div className="flex items-center gap-2 text-xs font-medium text-ink-400">
                       <Calendar className="h-3.5 w-3.5" />
                       {event.dateLabel}
                       <span className="text-ink-300">·</span>
                       <Clock className="h-3.5 w-3.5" />
                       {event.time}
                     </div>
-                    <h3 className="mt-2 font-display text-lg font-600 leading-snug text-ink-900">
+                    <h3 className="mt-2 font-display text-lg font-semibold leading-snug text-ink-900">
                       {event.title}
                     </h3>
                     <p className="mt-1.5 flex-1 text-sm leading-relaxed text-ink-500 line-clamp-2">
                       {event.description}
                     </p>
                     <div className="mt-4 flex items-center justify-between border-t border-ink-100 pt-3">
-                      <span className="flex items-center gap-1.5 text-xs font-500 text-ink-500">
+                      <span className="flex items-center gap-1.5 text-xs font-medium text-ink-500">
                         <MapPin className="h-3.5 w-3.5 text-gabon-green" />
                         {event.city}
                       </span>
-                      <span className="text-sm font-700 text-ink-900">{event.price}</span>
+                      <span className="text-sm font-bold text-ink-900">{event.price}</span>
                     </div>
                   </div>
                 </article>
@@ -138,7 +138,7 @@ export default function Programme() {
           ) : (
             <div className="mt-12 flex flex-col items-center justify-center rounded-2xl border border-dashed border-ink-200 py-16 text-center">
               <Search className="h-8 w-8 text-ink-300" />
-              <p className="mt-3 text-sm font-500 text-ink-500">
+              <p className="mt-3 text-sm font-medium text-ink-500">
                 Aucun événement ne correspond à votre recherche.
               </p>
               <button
@@ -146,7 +146,7 @@ export default function Programme() {
                   setActive('Tous');
                   setQuery('');
                 }}
-                className="mt-4 text-sm font-600 text-gabon-green hover:underline"
+                className="mt-4 text-sm font-semibold text-gabon-green hover:underline"
               >
                 Réinitialiser les filtres
               </button>

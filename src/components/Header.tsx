@@ -36,10 +36,10 @@ export default function Header() {
               <CalendarHeart className="h-5 w-5" />
             </span>
             <span className="flex flex-col leading-none">
-              <span className="font-display text-lg font-600 tracking-tight text-ink-900">
+              <span className="font-display text-lg font-semibold tracking-tight text-ink-900">
                 Gabon Culture
               </span>
-              <span className="text-[10px] font-500 uppercase tracking-[0.18em] text-ink-400">
+              <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-ink-400">
                 Événements & Patrimoine
               </span>
             </span>
@@ -51,7 +51,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="rounded-full px-4 py-2 text-sm font-500 text-ink-600 transition-colors hover:bg-ink-100 hover:text-ink-900"
+                className="rounded-full px-4 py-2 text-sm font-medium text-ink-600 transition-colors hover:bg-ink-100 hover:text-ink-900"
               >
                 {link.label}
               </a>
@@ -87,7 +87,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="rounded-xl px-4 py-3 text-sm font-500 text-ink-700 transition-colors hover:bg-ink-100"
+              className="rounded-xl px-4 py-3 text-sm font-medium text-ink-700 transition-colors hover:bg-ink-100"
             >
               {link.label}
             </a>

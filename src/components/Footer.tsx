@@ -42,10 +42,10 @@ export default function Footer() {
                 <CalendarHeart className="h-5 w-5" />
               </span>
               <span className="flex flex-col leading-none">
-                <span className="font-display text-lg font-600 text-ink-900">
+                <span className="font-display text-lg font-semibold text-ink-900">
                   Gabon Culture
                 </span>
-                <span className="text-[10px] font-500 uppercase tracking-[0.18em] text-ink-400">
+                <span className="text-[10px] font-medium uppercase tracking-[0.18em] text-ink-400">
                   Événements & Patrimoine
                 </span>
               </span>
@@ -73,7 +73,7 @@ export default function Footer() {
           {/* Link columns */}
           {footerLinks.map((col) => (
             <div key={col.title}>
-              <h4 className="text-xs font-700 uppercase tracking-wider text-ink-400">
+              <h4 className="text-xs font-bold uppercase tracking-wider text-ink-400">
                 {col.title}
               </h4>
               <ul className="mt-4 space-y-2.5">

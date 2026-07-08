@@ -23,7 +23,7 @@ export default function Hero() {
               <Sparkles className="h-3.5 w-3.5" />
               Saison culturelle 2026
             </span>
-            <h1 className="mt-5 font-display text-4xl font-600 leading-[1.08] tracking-tight text-ink-900 sm:text-5xl lg:text-6xl">
+            <h1 className="mt-5 font-display text-4xl font-semibold leading-[1.08] tracking-tight text-ink-900 sm:text-5xl lg:text-6xl">
               Vivez la richesse
               <br />
               culturelle du{' '}
@@ -97,7 +97,7 @@ export default function Hero() {
                 <Sparkles className="h-5 w-5" />
               </span>
               <div className="leading-tight">
-                <p className="text-sm font-700 text-ink-900">+40 artistes</p>
+                <p className="text-sm font-bold text-ink-900">+40 artistes</p>
                 <p className="text-xs text-ink-400">à découvrir</p>
               </div>
             </div>
@@ -108,8 +108,8 @@ export default function Hero() {
         <div className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-ink-200 bg-ink-200 sm:grid-cols-4 lg:mt-20">
           {stats.map((s) => (
             <div key={s.label} className="bg-ink-50 px-6 py-6 text-center">
-              <p className="font-display text-3xl font-700 text-gabon-green">{s.value}</p>
-              <p className="mt-1 text-xs font-500 uppercase tracking-wide text-ink-400">
+              <p className="font-display text-3xl font-bold text-gabon-green">{s.value}</p>
+              <p className="mt-1 text-xs font-medium uppercase tracking-wide text-ink-400">
                 {s.label}
               </p>
             </div>

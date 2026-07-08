@@ -51,7 +51,7 @@
   background: #a8835a;
 }
 
-/* Reveal on scroll */
+/* Reveal on scroll — fallback ensures content is visible if JS fails */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -60,4 +60,14 @@
 .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+/* Safety: if JS doesn't run, show content after 2s */
+@keyframes reveal-fallback {
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  animation: reveal-fallback 0s 2s forwards;
+}
+.reveal.is-visible {
+  animation: none;
 }

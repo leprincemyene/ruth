@@ -35,7 +35,7 @@ export default function Culture() {
                   « La culture gabonaise est un pont entre les ancêtres et les
                   générations futures. »
                 </p>
-                <p className="mt-2 text-xs font-600 text-gabon-green">
+                <p className="mt-2 text-xs font-semibold text-gabon-green">
                   — Patrimoine vivant d'Afrique centrale
                 </p>
               </div>
@@ -47,7 +47,7 @@ export default function Culture() {
                 <Sparkles className="h-3.5 w-3.5" />
                 Notre culture
               </span>
-              <h2 className="mt-4 font-display text-3xl font-600 tracking-tight text-ink-900 sm:text-4xl">
+              <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-ink-900 sm:text-4xl">
                 Un patrimoine vivant,
                 <br />
                 une créativité sans frontières
@@ -71,7 +71,7 @@ export default function Culture() {
                       <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gabon-green/10 text-gabon-green transition-colors group-hover:bg-gabon-green group-hover:text-white">
                         <Icon className="h-5 w-5" />
                       </span>
-                      <h3 className="mt-4 font-display text-base font-600 text-ink-900">
+                      <h3 className="mt-4 font-display text-base font-semibold text-ink-900">
                         {pillar.title}
                       </h3>
                       <p className="mt-1.5 text-sm leading-relaxed text-ink-500">

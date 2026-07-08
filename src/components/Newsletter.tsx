@@ -29,7 +29,7 @@ export default function Newsletter() {
                 <Mail className="h-3.5 w-3.5" />
                 Newsletter
               </span>
-              <h2 className="mt-4 font-display text-3xl font-600 tracking-tight text-white sm:text-4xl">
+              <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
                 Ne manquez aucun
                 <br />
                 événement culturel
@@ -45,7 +45,7 @@ export default function Newsletter() {
                 <div className="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur">
                   <CheckCircle2 className="h-8 w-8 flex-shrink-0 text-gabon-green" />
                   <div>
-                    <p className="font-600 text-white">Merci pour votre inscription !</p>
+                    <p className="font-semibold text-white">Merci pour votre inscription !</p>
                     <p className="mt-1 text-sm text-ink-300">
                       Vous recevrez bientôt le prochain programme culturel.
                     </p>
@@ -64,7 +64,7 @@ export default function Newsletter() {
                     />
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center gap-2 rounded-full bg-gabon-green px-6 py-3 text-sm font-600 text-white shadow-lg shadow-gabon-green/30 transition-all hover:bg-gabon-green/90 active:scale-95"
+                      className="inline-flex items-center justify-center gap-2 rounded-full bg-gabon-green px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-gabon-green/30 transition-all hover:bg-gabon-green/90 active:scale-95"
                     >
                       S'inscrire
                       <Send className="h-4 w-4" />
